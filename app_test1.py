@@ -6,7 +6,15 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 import requests
 from io import BytesIO
-import fitz  # PyMuPDF for PDF processing
+
+# PyMuPDF (fitz) is not compatible with Streamlit Cloud as of my last knowledge update.
+# You may need to find an alternative for PDF processing or check if it's supported on your deployment platform.
+# If you are not deploying on Streamlit Cloud, you can keep this import.
+try:
+    import fitz
+except ImportError:
+    st.warning("PyMuPDF (fitz) is not supported on Streamlit Cloud. Consider an alternative for PDF processing.")
+
 
 # Load the tokenizer
 tokenizer_file_path = "my_token.pk1"

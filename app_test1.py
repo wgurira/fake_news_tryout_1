@@ -1,7 +1,8 @@
+!pip install tensorflow
 import streamlit as st
 import pickle
-#import tensorflow as tf
-#from tensorflow import keras
+import tensorflow as tf
+from tensorflow import keras
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 import requests

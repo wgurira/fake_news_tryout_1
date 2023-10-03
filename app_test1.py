@@ -1,4 +1,3 @@
-pip install tensorflow
 import streamlit as st
 import pickle
 import tensorflow as tf

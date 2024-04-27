@@ -25,6 +25,13 @@ with open(tokenizer_file_path, 'rb') as tokenizer_file:
 model = keras.models.load_model("my_model.h5")
 
 # Streamlit app title and description
+st.write("""
+Members:
+- Gurira Wesley P R204433P HAI
+- Sendekera Cousins R207642E HAI
+- Ryan Kembo R205723E HAI
+- Cyprian Masvikeni R205537V HDSC
+""")
 st.title("Fake News Detection")
 st.write("Upload a file (PDF, text, articles, etc.) to check if it contains fake news or true information.")
 
